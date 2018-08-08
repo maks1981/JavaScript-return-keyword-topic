@@ -1,0 +1,42 @@
+// The javascript return keyword examples;
+
+function square(x){
+	return x * x;
+}
+square(5)
+25
+"5 squared is: " + square(5)
+"5 squared is: 25"
+
+// another example;
+var result = square(104);
+result
+10816
+
+// Another examle;we use the return keyword to output avalue from a function
+// this function capitalizes the first char in a string:
+
+
+function capitalize(str) {
+	return str.charAt(0).toUpperCase() + str.slice(1);
+}
+var city = "paris";//"paris"
+var capital = capitalize(city);//"Paris"
+// we can capture the returned value in a variable
+
+// Another example
+// The return keyword stops execution of a function
+
+
+function capitalize(str) {
+	if (typeof str === "number"){
+		return "that is not a string!"
+	}	
+	return str.charAt(0).toUpperCase() + str.slice(1);
+}
+var city = "paris";//"paris"
+var capital = capitalize(city);//"Paris"
+
+var num = 37;
+var capital = capitalize(num); //"that is not a string!"
+
